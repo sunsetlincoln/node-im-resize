@@ -65,11 +65,11 @@ module.exports.resize = function(crop, version) {
   version.height = resize[1];
 
   if (maxW && maxH) {
-    return maxW + 'x' + maxH;
+    return maxW + 'x' + maxH + '>';
   } else if (maxW) {
-    return '' + maxW;
+    return '' + maxW + '>';
   } else if (maxH) {
-    return 'x' + maxH;
+    return 'x' + maxH + '>';
   } else {
     return null;
   }
